@@ -9,7 +9,7 @@ The only setup is to specify a directory in which migration files are stored. Th
 It uses Joseki/Console (based on Symfony/Console) to run from the command line. 
 
 **Commands**
-- bin/migration create [name] - Creates a new migration file in the migration directory. It defaults to 'migration'.
+- bin/migration create [name] - Creates a new migration file in the migration directory. Parameter 'name' represents a name of migration file. It defaults to 'migration'.
 - bin/migration migrate - Runs SQL commands from files that haven't been processed yet.
 
 *Don't forget to move 'bin/migration' to a location which it can be accessed at on the command line. You can also use a non-prefixed console application and call methods as follows: your_console_app pg:migration:<your_command>.*
