@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+/** @var Nette\DI\Container $container */
+$container = require __DIR__ . '/../app/bootstrap.php';
+/** @var Joseki\Console\Application $application */
+$application = $container->getService('Console.console.migration');
+$application->setName('Database Migration Tool');
+$application->enableWelcomeMessage(false);
+$application->run();
