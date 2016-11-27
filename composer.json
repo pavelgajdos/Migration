@@ -1,7 +1,7 @@
 {
     "name": "pg/migration",
     "type": "library",
-    "description": "PG/Migration is a simple console database migration tool for your PHP apps.",
+    "description": "PG/Migration is a simple console database migration tool for Nette. It uses Joseki\\Console as an integration tool for your app.",
     "keywords": ["pg", "migrations", "database", "db", "simple database migrations"],
     "license": "MIT",
     "authors": [{
