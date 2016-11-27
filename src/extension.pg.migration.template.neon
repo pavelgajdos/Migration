@@ -1,5 +1,0 @@
-extensions:
-  Migration: PG\Migration\DI\MigrationExtension
-
-Migration:
-  migrationDir: path/to/migrationDir

@@ -1,0 +1,13 @@
+# Nette configuration file.
+# Don't forget to load this file
+
+extensions:
+  Migration: PG\Migration\DI\MigrationExtension
+
+Migration:
+  resourceDir: %migrationDir%
+
+# comment with # if you don't use Joseki/Console
+Console:
+  console:
+    migration: 'pg:migration' # DO NOT CHANGE
