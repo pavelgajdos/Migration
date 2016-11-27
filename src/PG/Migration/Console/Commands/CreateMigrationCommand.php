@@ -28,7 +28,7 @@ class CreateMigrationCommand extends Command
 
     protected function configure()
     {
-        $this->setName('db:migration:create');
+        $this->setName('pg:migration:create');
         $this->setDescription('Creates a new migration file');
         $definition = new InputDefinition();
         $definition->addArgument(

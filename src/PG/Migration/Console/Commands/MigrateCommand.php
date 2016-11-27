@@ -25,7 +25,7 @@ class MigrateCommand extends Command
 
     protected function configure()
     {
-        $this->setName('db:migration:migrate');
+        $this->setName('pg:migration:migrate');
         $this->setDescription('Runs unprocessed migration files');
     }
 
