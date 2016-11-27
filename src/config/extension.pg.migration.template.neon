@@ -5,7 +5,7 @@ extensions:
   Migration: PG\Migration\DI\MigrationExtension
 
 Migration:
-  resourceDir: %migrationDir% # setup this parameter elsewhere or use relative path
+  migrationDir: %migrationDir% # setup this parameter elsewhere or use relative path
 
 # comment with # if you don't use Joseki/Console
 Console:
