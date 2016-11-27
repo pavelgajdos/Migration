@@ -1,0 +1,31 @@
+{
+    "name": "pg/migration",
+    "type": "library",
+    "description": "PG/Migration is a simple console database migration tool for your PHP apps.",
+    "keywords": ["pg", "migrations", "database", "db", "simple database migrations"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Pavel Gajdoš",
+        "email": "info@pavelgajdos.cz",
+        "homepage": "http://www.pavelgajdos.cz",
+        "role": "Lead Developer"
+    }],
+    "require": {
+        "php": ">=5.5",
+        "dibi/dibi": "~3.0",
+        "joseki/console": "~0.2",
+        "nette/di": "~2.4",
+        "symfony/console": "~3.1"
+    },
+    "require-dev": {
+        "nette/bootstrap": "~2.2",
+        "nette/tester": "~1.0",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "classmap": ["src"]
+    },
+    "autoload-dev": {
+        "classmap": ["tests"]
+    }
+}
