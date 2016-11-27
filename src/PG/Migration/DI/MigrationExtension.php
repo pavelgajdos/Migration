@@ -4,11 +4,7 @@ namespace PG\Migration\DI;
 
 use PG\Migration\Console\Commands\CreateMigrationCommand;
 use PG\Migration\Console\Commands\MigrateCommand;
-use Nette\Configurator;
-use Nette\DI\Compiler;
 use Nette\DI\CompilerExtension;
-use Nette\DI\ServiceDefinition;
-use Nette\DI\Statement;
 use Nette\Utils\Validators;
 use Skritek\Migration\MigrationManager;
 
