@@ -57,8 +57,7 @@ class MigrationManager
     {
         $this->connection->begin();
         try {
-            $sql = file_get_contents($path);
-            $this->connection->nativeQuery($sql);
+            $this->connection->loadFile($path);
             rename($path, Strings::replace($path, "/\.sql$/", "_OK.sql"));
         } catch (\Exception $e) {
             Debugger::log($e, Debugger::ERROR);
