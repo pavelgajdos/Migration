@@ -6,6 +6,7 @@ use PG\Migration\Console\Commands\CreateMigrationCommand;
 use PG\Migration\Console\Commands\MigrateCommand;
 use Nette\DI\CompilerExtension;
 use Nette\Utils\Validators;
+use PG\Migration\Console\Commands\StatusCommand;
 use Skritek\Migration\MigrationManager;
 
 class MigrationExtension extends CompilerExtension
@@ -37,6 +38,11 @@ class MigrationExtension extends CompilerExtension
 
         $container->addDefinition($this->prefix('command.migrate'))
             ->setClass(MigrateCommand::class)
+            ->addTag(self::TAG_JOSEKI_COMMAND)
+            ->addTag(self::TAG_KDYBY_COMMAND);
+
+        $container->addDefinition($this->prefix('command.status'))
+            ->setClass(StatusCommand::class)
             ->addTag(self::TAG_JOSEKI_COMMAND)
             ->addTag(self::TAG_KDYBY_COMMAND);
     }

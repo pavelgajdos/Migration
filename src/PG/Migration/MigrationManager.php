@@ -86,6 +86,24 @@ class MigrationManager
 
 
 
+    public function printUnprocessedMigrations()
+    {
+        $unprocessed = $this->findUnprocessedMigrations();
+
+        echo "Unprocessed migrations:" . PHP_EOL;
+
+        if (!$unprocessed) {
+            echo "No unprocessed migrations." . PHP_EOL;
+            return;
+        }
+
+        foreach ($unprocessed as $number => $path) {
+            echo "Migration #$number at\t$path" . PHP_EOL;
+        }
+    }
+
+
+
     public function getNextMigrationNumber()
     {
         $lastMigration = $this->findLastMigration();
